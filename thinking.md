@@ -13,7 +13,7 @@ TODO: Wrap all the game logic in a Game class.
     - Let us use array or arrays as a data structure for the board, because that is what a square board is like.
     - The array of arrays would contain Cell objects
     - **Cell Object**:
-        - Value Attribute: Is it a Bomb or Number. Empty would be the same as "0".
+        - Value Attribute: Is it a Bomb, Number or Empty. Separating Empty from Number is important because results of clicking them is different. Number reveals just that cell whereas empty reveals that cell and all the other cells surrounding them.  
         - Revealed Attribute: Is the cell revealed or not. If it is not revealed, we can remove the click handler from it.
         - Reveal Method(): If not revealed then reveal else nothing.
     - **Board Object**:
